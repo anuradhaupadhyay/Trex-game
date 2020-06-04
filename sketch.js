@@ -97,6 +97,8 @@ function draw() {
   }
   else if(gameState===END){
     ground.velocityX=0;
+    trex.velocityY=0;
+    trex.addImage(trex_collided);
     obstaclesGroup.setVelocityXEach(0);
     cloudsGroup.setVelocityXEach(0);
     obstaclesGroup.setLifetimeEach(-1);
